@@ -1,0 +1,7 @@
+<launch>
+    <!-- <param name="data_base_folder" value="/home/honden01/Documents/data_yuquan" type="string"/> -->
+    <node pkg="ros2images" name="ros2images" type="ros2images.py" output="screen">
+        <!-- <param name="gps_position_topic" value="/gps/current_pose"/> -->
+    </node>
+ 
+</launch>
