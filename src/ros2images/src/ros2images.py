@@ -13,8 +13,11 @@ def callback(data):
       img = bridge.imgmsg_to_cv2(data, "bgr8")
     except CvBridgeError as e:
       print(e)
-    name = "out/images_"+str(i)
-    cv2.imwrite('test.png',img)
+    global i
+    name = "out/images_"+str(i)+".png"
+    print(name)
+    i = i + 1
+    cv2.imwrite(name,img)
 
 
 if __name__ == '__main__':
